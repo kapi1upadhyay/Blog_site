@@ -1,0 +1,101 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blog</title>
+<style>
+    body {
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #login {
+    margin-top: 20px;
+  }
+  
+  #user-management {
+    margin-top: 20px;
+  }
+  
+  #blog-creation {
+    margin-top: 20px;
+  }
+  
+  #blog-public {
+    margin-top: 20px;
+  }
+  
+</style>
+</head>
+<body>
+<div id="login">
+<h1>Log in</h1>
+<input type="email" id="email" placeholder="Email">
+<input type="password" id="password" placeholder="Password">
+<button id="login-button">Log in</button>
+</div>
+<div id="user-management">
+<h1>User Management</h1>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>John Doe</td>
+<td>johndoe@example.com</td>
+<td>Admin</td>
+</tr>
+<tr>
+<td>Jane Doe</td>
+<td>janedoe@example.com</td>
+<td>Writer</td>
+</tr>
+</tbody>
+</table>
+<button id="create-user-button">Create User</button>
+<button id="edit-user-button">Edit User</button>
+<button id="delete-user-button">Delete User</button>
+</div>
+<div id="blog-creation">
+<h1>Blog Creation</h1>
+<input type="text" id="title" placeholder="Title">
+<textarea id="body" placeholder="Body Text"></textarea>
+<input type="text" id="tags" placeholder="Tags">
+<select id="category">
+<option value="Technology">Technology</option>
+<option value="Business">Business</option>
+<option value="Lifestyle">Lifestyle</option>
+</select>
+<button id="create-blog-post-button">Create Blog Post</button>
+</div>
+<div id="blog-public">
+<h1>Blog Public</h1>
+<ul id="blog-posts">
+</ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
